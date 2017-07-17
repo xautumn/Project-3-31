@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--通用导航栏-->
+    <declare-styleable name="TitleBarView">
+        <!--中心标题文本、字体、颜色-->
+        <attr name="titleText" format="string"/>
+        <attr name="titleTextSize" format="dimension"/>
+        <attr name="titleTextColor" format="color"/>
+        <!--左为tv时文本、字体、颜色-->
+        <attr name="leftText" format="string"/>
+        <attr name="leftTextSize" format="dimension"/>
+        <attr name="leftTextColor" format="color"/>
+        <!--左为iv时的src-->
+        <attr name="leftImageViewDrawable" format="reference|color"/>
+        <!--右为tv时文本、字体、颜色-->
+        <attr name="rightText" format="string"/>
+        <attr name="rightTextSize" format="dimension"/>
+        <attr name="rightTextColor" format="color"/>
+        <!--右为iv时的src-->
+        <attr name="rightImageViewDrawable" format="reference|color"/>
+        <!--标题栏的背景色-->
+        <attr name="titleBarViewBackground" format="reference|color"/>
+        <!--是否右底部分割线的开关-->
+        <attr name="isNeedSplitLine" format="boolean"/>
+        <!--状态栏填充部分的背景色-->
+        <attr name="statusDrawable" format="reference|color"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/6-26elevation" />
+            <option value="$PROJECT_DIR$/6-27changemeasure" />
+            <option value="$PROJECT_DIR$/7-10readponittext" />
+            <option value="$PROJECT_DIR$/7-13rxjava_and_retrofit" />
+            <option value="$PROJECT_DIR$/7-14testtopbarmenu" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/businessclock" />
+            <option value="$PROJECT_DIR$/edittextbug" />
+            <option value="$PROJECT_DIR$/hanldertest" />
+            <option value="$PROJECT_DIR$/imageshadow" />
+            <option value="$PROJECT_DIR$/svgtest" />
+            <option value="$PROJECT_DIR$/whiteclock" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

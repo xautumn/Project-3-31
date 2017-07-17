@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/6-26elevation/6-26elevation.iml" filepath="$PROJECT_DIR$/6-26elevation/6-26elevation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/6-27changemeasure/6-27changemeasure.iml" filepath="$PROJECT_DIR$/6-27changemeasure/6-27changemeasure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7-10readponittext/7-10readponittext.iml" filepath="$PROJECT_DIR$/7-10readponittext/7-10readponittext.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7-13rxjava_and_retrofit/7-13rxjava_and_retrofit.iml" filepath="$PROJECT_DIR$/7-13rxjava_and_retrofit/7-13rxjava_and_retrofit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7-14testtopbarmenu/7-14testtopbarmenu.iml" filepath="$PROJECT_DIR$/7-14testtopbarmenu/7-14testtopbarmenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Project-3-31.iml" filepath="$PROJECT_DIR$/Project-3-31.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/businessclock/businessclock.iml" filepath="$PROJECT_DIR$/businessclock/businessclock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/edittextbug/edittextbug.iml" filepath="$PROJECT_DIR$/edittextbug/edittextbug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hanldertest/hanldertest.iml" filepath="$PROJECT_DIR$/hanldertest/hanldertest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imageshadow/imageshadow.iml" filepath="$PROJECT_DIR$/imageshadow/imageshadow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/svgtest/svgtest.iml" filepath="$PROJECT_DIR$/svgtest/svgtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/whiteclock/whiteclock.iml" filepath="$PROJECT_DIR$/whiteclock/whiteclock.iml" />
+    </modules>
+  </component>
+</project>

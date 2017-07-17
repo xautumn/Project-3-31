@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--通用导航栏开始-->
+    <dimen name="titlebar_text_size_l6">16sp</dimen>
+    <dimen name="titlebar_text_size_l8">18sp</dimen>
+    <dimen name="titlebar_height">50dp</dimen>
+    <!--通用导航栏结束-->
+</resources>
