@@ -1,5 +1,6 @@
 package com.example.a7_28ormlite;
 
+import android.os.Debug;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -7,25 +8,39 @@ import android.view.View;
 
 import com.example.a7_28ormlite.bean.ContactBean;
 import com.example.a7_28ormlite.dao.ContactDao;
+import com.example.a7_28ormlite.dao.test;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     private String TAG = "MainActivity";
     private ContactDao contactDao;
+    private List<ContactBean> contactBeenList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.i(TAG,"onCreate");
+        getSupportActionBar().hide();
         contactDao = new ContactDao(this);
 
+        ContactDao test= new test(this);
+        Log.i(TAG,"--"+test.test);
+        Log.i(TAG,"--00--"+test.getString());
+
+        contactBeenList = new ArrayList<>();
+        Debug.startMethodTracing("ormLite");
+        queryAll(null);
+        queryColumn(null);
+        Debug.stopMethodTracing();
     }
 
     public void insert(View v) {
+
 
         ContactBean contactBean = new ContactBean();
         contactBean.setWatchId("1a");
@@ -60,6 +75,34 @@ public class MainActivity extends AppCompatActivity {
         contactDao.addContact(contactBean2);
         contactDao.addContact(contactBean3);
 
+        ContactBean contactBean4 = new ContactBean();
+        contactBean4.setWatchId("55");
+        contactBean4.setMobileId("4b");
+        contactBean4.setFriendWatchNumber("1b");
+        contactBean4.setLongNumber("4d");
+        contactBean4.setShortNumber("4e");
+
+        ContactBean contactBean5 = new ContactBean();
+        contactBean5.setWatchId("55");
+        contactBean5.setMobileId("4b");
+        contactBean5.setFriendWatchNumber("1b");
+        contactBean5.setLongNumber("4d");
+        contactBean5.setShortNumber("4e");
+
+        ContactBean contactBean6 = new ContactBean();
+        contactBean6.setWatchId("55");
+        contactBean6.setMobileId("3323");
+        contactBean6.setFriendWatchNumber("1b");
+        contactBean6.setLongNumber("4d");
+        contactBean6.setShortNumber("4e");
+
+        contactBeenList.add(contactBean4);
+        contactBeenList.add(contactBean5);
+        contactBeenList.add(contactBean6);
+
+        contactDao.addContactAll(contactBeenList);
+
+
     }
     public void queryAll(View v) {
         List list1 = null;
@@ -79,5 +122,14 @@ public class MainActivity extends AppCompatActivity {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    public void queryColumn(View v) {
+        List list = contactDao.querySelectColumn("watchId");
+        Log.i(TAG,"list = "+list);
+    }
+
+    public void deleteAll(View v) {
+        contactDao.deleteContactAll(contactBeenList);
     }
 }

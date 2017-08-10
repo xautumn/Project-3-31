@@ -11,21 +11,37 @@
     <Button
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:text="insert"
         android:onClick="insert"
+        android:text="插入"
         />
     <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:text="queryAll"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:onClick="queryAll"
+        android:text="查询全部"
         android:layout_centerHorizontal="true"
         />
     <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_alignParentRight="true"
-        android:text="query"
         android:onClick="query"
+        android:text="查询"
+        />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="queryColumn"
+        android:text="查询指定列"
+        />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:onClick="deleteAll"
+        android:text="删除所有"
         />
 </RelativeLayout>

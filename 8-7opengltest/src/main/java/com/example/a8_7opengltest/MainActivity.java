@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mGLSurfaceView = (GLSurfaceView) findViewById(R.id.surfaceView);
 
+        //GLSurfaceView 渲染的画布
         mGLSurfaceView.setEGLContextClientVersion(2);
         mGLSurfaceView.setEGLConfigChooser(8, 8, 8, 8, 16, 0);
         mGLSurfaceView.setRenderer(new MyRenderer());
@@ -32,5 +33,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         mGLSurfaceView.onResume();
+    }
+
+    private void testInsert(View v) {
+
+
     }
 }
